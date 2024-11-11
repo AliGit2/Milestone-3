@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Resume Builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Dynamic Resume Builder</h1>
+      <p>Fill out the form below to dynamically generate your resume.</p>
+    </header>
+
+    <main>
+      <!-- Resume Form -->
+      <form id="resumeForm">
+        <section class="form-section">
+          <h2>Personal Information</h2>
+          <div class="input-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required placeholder="Nigger">
+          </div>
+          <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required placeholder="example@mail.com">
+          </div>
+          <div class="input-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" required placeholder="123-456-7890">
+          </div>
+        </section>
+
+        <section class="form-section">
+          <h2>Education</h2>
+          <div class="input-group">
+            <label for="education">Degree:</label>
+            <input type="text" id="education" required placeholder="Bachelor's in Computer Science">
+          </div>
+          <div class="input-group">
+            <label for="institution">Institution:</label>
+            <input type="text" id="institution" required placeholder="University Name">
+          </div>
+        </section>
+
+        <section class="form-section">
+          <h2>Work Experience</h2>
+          <div class="input-group">
+            <label for="workExperience">Job Title:</label>
+            <input type="text" id="workExperience" required placeholder="Software Developer">
+          </div>
+          <div class="input-group">
+            <label for="company">Company:</label>
+            <input type="text" id="company" required placeholder="Company Name">
+          </div>
+          <div class="input-group">
+            <label for="years">Years of Experience:</label>
+            <input type="number" id="years" required placeholder="2">
+          </div>
+        </section>
+
+        <section class="form-section">
+          <h2>Skills</h2>
+          <div class="input-group">
+            <label for="skills">Skills (comma-separated):</label>
+            <input type="text" id="skills" required placeholder="JavaScript, TypeScript, React">
+          </div>
+        </section>
+
+        <button type="submit" class="submit-button">Generate Resume</button>
+      </form>
+    </main>
+
+    <!-- Resume Display -->
+    <aside id="resumeDisplay" class="resume-display">
+      <h2>Your Generated Resume</h2>
+      <p><strong>Name:</strong> <span id="displayName"></span></p>
+      <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+      <p><strong>Phone:</strong> <span id="displayPhone"></span></p>
+      <h3>Education</h3>
+      <p><strong>Degree:</strong> <span id="displayEducation"></span></p>
+      <p><strong>Institution:</strong> <span id="displayInstitution"></span></p>
+      <h3>Work Experience</h3>
+      <p><strong>Job Title:</strong> <span id="displayWorkExperience"></span></p>
+      <p><strong>Company:</strong> <span id="displayCompany"></span></p>
+      <p><strong>Years of Experience:</strong> <span id="displayYears"></span></p>
+      <h3>Skills</h3>
+      <p><strong>Skills:</strong> <span id="displaySkills"></span></p>
+    </aside>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
